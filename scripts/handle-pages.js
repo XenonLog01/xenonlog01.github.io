@@ -31,7 +31,6 @@ function handleArticleClick(id, btn) {
 
 function selectArticleButton(button) {
     Array.from(articleButtons).forEach(btn => {
-        console.log(btn);
         if (btn.value === button.value) {
             btn.id += 'active';
         } else {
