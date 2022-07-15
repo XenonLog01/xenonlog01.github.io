@@ -7,9 +7,7 @@ let selected = HOME;
 
 function init() {
     const tmp = JSON.parse(localStorage.getItem('selected'));
-    if (tmp !== '') {
-        selected = tmp;
-    }
+    selected = tmp || 'home';
 
     handleClick(selected, getButton(selected));
 }
