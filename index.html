@@ -21,7 +21,11 @@
   <div class="nav-box no-selection">
     <ul class="nav-content">
       <li><button onclick="handleClick('home', this)" class="toggle" value="home">home</button></li>
-      <li><button onclick="handleClick('articles', this)" class="toggle" value="articles">articles</button></li>
+      <li>
+        <button onclick="handleClick('articles', this);
+                handleArticleClick(initArticle, getButton(initArticle));"
+                class="toggle" value="articles">articles</button>
+      </li>
       <li><button onclick="handleClick('about', this)" class="toggle" value="about">about</button></li>
     </ul>
   </div>
@@ -64,7 +68,7 @@
           <h2>Articles:</h2>
           <ul class="article-listing">
             <li>
-              <button onclick="handleArticleClick('article-home', this)"
+              <button onclick="handleArticleClick('article-home', this)" id="active"
                       class="article-button" value="article-home">home</button>
             </li>
             <li>

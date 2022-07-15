@@ -9,6 +9,8 @@
 
   --page-bg: #2d2d2f;
   --content-bg: #5e5e61;
+
+  --active-color: black;
 }
 
 
@@ -121,5 +123,9 @@ article {
 }
 
 #current {
-  color: black;
+  color: var(--active-color);
+}
+
+#active {
+  color: var(--active-color);
 }

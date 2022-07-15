@@ -33,7 +33,7 @@ function selectArticleButton(button) {
     Array.from(articleButtons).forEach(btn => {
         console.log(btn);
         if (btn.value === button.value) {
-            btn.id += 'current';
+            btn.id += 'active';
         } else {
             btn.id = '';
         }
