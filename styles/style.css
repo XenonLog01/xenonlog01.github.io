@@ -139,7 +139,7 @@ article {
 
   .title-box {
     position: absolute;
-    margin: var(--dist-from-wall);
+    margin: var(--dist-from-wall) var(--dist-from-wall) calc(var(--dist-from-wall) * 2) var(--dist-from-wall);
     padding: 0;
   }
 
