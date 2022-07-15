@@ -1,15 +1,43 @@
 const doc = document.querySelector('article');
 const btns = document.getElementsByTagName('button');
-const children = doc.children;
-const HOME = 'home';
+const articleElem = document.getElementById('article-page');
 
-let selected = HOME;
+const children = doc.children;
+const articles = articleElem.children;
+const articleButtons = document.getElementsByClassName('article-button');
+
+let selected = 'home';
+let initArticle = 'article-home';
 
 function init() {
     const tmp = JSON.parse(localStorage.getItem('selected'));
     selected = tmp || 'home';
 
     handleClick(selected, getButton(selected));
+    handleArticleClick(initArticle, getButton(initArticle));
+}
+
+function handleArticleClick(id, btn) {
+    selectArticleButton(btn);
+    Array.from(articles).forEach(itm => {
+        if (itm.id === id) {
+            itm.style.display = 'block';
+        } else {
+            itm.style.display = 'none';
+        }
+    });
+
+}
+
+function selectArticleButton(button) {
+    Array.from(articleButtons).forEach(btn => {
+        console.log(btn);
+        if (btn.value === button.value) {
+            btn.id += 'current';
+        } else {
+            btn.id = '';
+        }
+    });
 }
 
 function handleClick(id, btn) {

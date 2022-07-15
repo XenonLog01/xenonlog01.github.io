@@ -21,6 +21,7 @@
   <div class="nav-box no-selection">
     <ul class="nav-content">
       <li><button onclick="handleClick('home', this)" class="toggle" value="home">home</button></li>
+      <li><button onclick="handleClick('articles', this)" class="toggle" value="articles">articles</button></li>
       <li><button onclick="handleClick('about', this)" class="toggle" value="about">about</button></li>
     </ul>
   </div>
@@ -32,6 +33,50 @@
         <h1 class="no-selection">This is a website</h1>
         <h2>Thank you for visiting</h2>
         <p>There will eventually be stuff here, but for now, i'm simply developing the site.</p>
+      </div>
+      <div id="articles">
+        <div id="article-page">
+          <div id="article-home">
+            <h1 class="no-selection">Xenon's articles:</h1>
+            <div>
+              <p>
+                &emsp;This is a place where I will put whatever articles I happen to write.
+              </p>
+            </div>
+          </div>
+
+          <div id="article1">
+            <h1 class="article-title">Article One</h1>
+            <p>
+              &emsp;This is a test article. Blah Blah Blah.
+            </p>
+          </div>
+
+          <div id="article2">
+            <h1 class="article-title">Article Two</h1>
+            <p>
+              &emsp;This is another test article. Blah Blah Blah.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h2>Articles:</h2>
+          <ul class="article-listing">
+            <li>
+              <button onclick="handleArticleClick('article-home', this)"
+                      class="article-button" value="article-home">home</button>
+            </li>
+            <li>
+              <button onclick="handleArticleClick('article1', this)"
+                      class="article-button" value="article1">article1</button>
+            </li>
+            <li>
+              <button onclick="handleArticleClick('article2', this)"
+                      class="article-button" value="article2">article2</button>
+            </li>
+          </ul>
+        </div>
       </div>
       <div id="about">
         <h1 class="no-selection">About this site</h1>

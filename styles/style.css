@@ -86,10 +86,29 @@ article {
   padding-left: 2%;
 }
 
-/* Content logic */
+/* Article stuff */
+.article-listing {
+  list-style: none;
+  margin-left: 0.95em;
+  padding-left: 0;
+}
+
+.article-button {
+  border: none;
+  background-color: var(--content-bg);
+  color: white;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+#article-home {
+  display: block;
+}
+
+/* Content stuff */
 .toggle {
   border: none;
-
   background-color: var(--content-bg);
   color: white;
 
