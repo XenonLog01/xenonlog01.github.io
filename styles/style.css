@@ -64,12 +64,17 @@ header h1 {
   border-radius: 8px;
 
   width: var(--nav-width);
+
   margin: 6.3% calc(var(--dist-from-wall) / 2) var(--dist-from-wall) var(--dist-from-wall);
+
 }
 
 .nav-content {
   list-style: none;
   text-align: left;
+
+  height: calc(100% - var(--dist-from-wall) - 3%);
+  overflow-y: scroll;
 }
 
 .content-box {
@@ -93,7 +98,7 @@ article {
 /* Article stuff */
 .article-listing {
   list-style: none;
-  margin-left: 0.95em;
+  margin-left: 2ch;
   padding-left: 0;
 }
 
@@ -120,18 +125,16 @@ article {
   font-size: 1rem;
 }
 
+/* Focus elements */
 .toggle:focus {
   outline: 0;
-}
-
-#current {
-  color: var(--active-color);
 }
 
 #active {
   color: var(--active-color);
 }
 
+/* Mobile / small screens */
 @media  screen and (max-width: 1080px) {
   body {
     display: block;

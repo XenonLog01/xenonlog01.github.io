@@ -65,7 +65,7 @@ function selectedButton(name) {
 
     Array.from(btns).forEach(btn => {
         if (btn.value === name) {
-            btn.id += 'current';
+            btn.id += 'active';
         } else {
             btn.id = '';
         }
