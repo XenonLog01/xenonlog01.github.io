@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+:root {
+  font-family: 'Open Sans', sans-serif;
+
+  /* Variables */
+  --nav-width: 20%;
+  --dist-from-wall: 1.5%;
+
+  --content-bg: #5e5e61;
+}
+
+
+body {
+  margin: 0;
+
+  display: flex;
+
+  background: #2d2d2f;
+  color: white;
+
+  height: 99.66vh;
+}
+
+.no-selection {
+  /* Keep user from selecting element */
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none;    /* Firefox all */
+  -ms-user-select: none;     /* IE 10+ */
+  -o-user-select: none;      /* Operah */
+  user-select: none;         /* Everything else */
+}
+
+/* Making the scaling a little more sane. */
+h1 { font-size: 25px; }
+h2 { font-size: 20px; }
+h3 { font-size: 17px; }
+
+
+.title-box {
+  position: fixed;
+  width: 96.9%;
+  margin: var(--dist-from-wall) 0 var(--dist-from-wall) var(--dist-from-wall);
+
+  padding: 0.5% 0 0.5% 0;
+
+  text-align: center;
+  background-color: var(--content-bg);
+  border-radius: 8px;
+}
+
+
+.nav-box {
+  display: inline-block;
+  text-align: center;
+
+  background-color: var(--content-bg);
+  border-radius: 8px;
+
+  width: var(--nav-width);
+  margin: 6% calc(var(--dist-from-wall) / 2) var(--dist-from-wall) var(--dist-from-wall);
+}
+
+
+.nav-content {
+  list-style: none;
+  text-align: left;
+}
+
+.content-box {
+  display: inline-block;
+
+  background-color: var(--content-bg);
+  border-radius: 8px;
+
+  width: calc(100% - var(--nav-width));
+  margin: 6% var(--dist-from-wall) var(--dist-from-wall) calc(var(--dist-from-wall) / 2);
+}
+
+article {
+  overflow-y: scroll;
+  width: calc(100% - var(--nav-width) + 16.5%);
+  height: calc(100% - var(--dist-from-wall));
+
+  padding-left: 2%;
+}
+
+/* Content logic */
+.toggle {
+  border: none;
+
+  background-color: var(--content-bg);
+  color: white;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.toggle:focus {
+  outline: 0;
+}
+
+#current {
+  color: black;
+}
