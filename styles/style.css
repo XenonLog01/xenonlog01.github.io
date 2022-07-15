@@ -7,6 +7,7 @@
   --nav-width: 20%;
   --dist-from-wall: 1.5%;
 
+  --page-bg: #2d2d2f;
   --content-bg: #5e5e61;
 }
 
@@ -16,7 +17,7 @@ body {
 
   display: flex;
 
-  background: #2d2d2f;
+  background: var(--page-bg);
   color: white;
 
   height: 99.66vh;
@@ -101,5 +102,5 @@ article {
 }
 
 #current {
-  color: black;
+  color: var(--page-bg);
 }
