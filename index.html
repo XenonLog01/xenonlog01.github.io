@@ -49,35 +49,36 @@
             </div>
           </div>
 
-          <div id="article1">
-            <h1 class="article-title">Article One</h1>
+          <div id="intel-arc">
+            <h1 class="article-title">Intel's Arc GPUs</h1>
+            <div class="image-side-text">
+              <img src="res/ARC-1.jpg" class="image" style="width: 45ch; height: auto;"
+                   alt="Intel Arc graphics have finally hit the market">
+              <p>
+                &emsp;Well after months of waiting, Intel's Arc GPUs have finally hit the market in China.
+                At a planned MSRP of $130 to $140 USD in the US, the Arc A380 has been widely controversial, primarily
+                due to news sites such as wccftech misreporting the price, confusing the price of the prebuilt computers
+                the GPU comes in with the price of the GPU itself. Fortunately, most other sites caught this mistake,
+                and sites such as PCGamer have properly reported the price of the Chinese cards at $150 USD.
+              </p>
+            </div>
             <p>
-              &emsp;This is a test article. Blah Blah Blah.
-            </p>
-          </div>
-
-          <div id="article2">
-            <h1 class="article-title">Article Two</h1>
-            <p>
-              &emsp;This is another test article. Blah Blah Blah.
+              &emsp;Of course, these GPUs are young, and as a result, their drivers need a lot of work. As of now,
+              games which use DirectX 11 suffer worse performance than the AMD RX6400.
             </p>
           </div>
         </div>
 
         <div>
-          <h2>Articles:</h2>
+          <h2>All our articles:</h2>
           <ul class="article-listing">
             <li>
               <button onclick="handleArticleClick('article-home', this)" id="active"
-                      class="article-button" value="article-home">home</button>
+                      class="article-button" value="article-home">Home</button>
             </li>
             <li>
-              <button onclick="handleArticleClick('article1', this)"
-                      class="article-button" value="article1">article1</button>
-            </li>
-            <li>
-              <button onclick="handleArticleClick('article2', this)"
-                      class="article-button" value="article2">article2</button>
+              <button onclick="handleArticleClick('intel-arc', this)"
+                      class="article-button" value="intel-arc">Intel Arc GPUs</button>
             </li>
           </ul>
         </div>

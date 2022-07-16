@@ -130,6 +130,19 @@ article {
   outline: 0;
 }
 
+.image {
+  border-radius: 8px;
+}
+
+.image-side-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-side-text p {
+  padding-left: 2.5ch;
+}
+
 #active {
   color: var(--active-color);
 }
