@@ -1,6 +1,6 @@
 const doc = document.querySelector('article');
 const btns = document.getElementsByTagName('button');
-const articleElem = document.getElementById('article-page');
+const articleElem = document.getElementById('article-pages');
 
 const children = doc.children;
 const articles = articleElem.children;

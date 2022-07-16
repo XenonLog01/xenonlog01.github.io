@@ -33,40 +33,12 @@
   <!-- Page content here -->
   <div class="content-box">
     <article>
-      <div id="home">
-        <h1 class="no-selection">This is a website</h1>
-        <h2>Thank you for visiting</h2>
-        <p>There will eventually be stuff here, but for now, i'm simply developing the site.</p>
-      </div>
-      <div id="articles">
-        <div id="article-page">
-          <div id="article-home">
-            <h1 class="no-selection">Articles:</h1>
-            <div>
-              <p>
-                &emsp;This is a place where I will put whatever articles I happen to write.
-              </p>
-            </div>
-          </div>
+      <div id="home"></div>
 
-          <div id="intel-arc">
-            <h1 class="article-title">Intel's Arc GPUs</h1>
-            <div class="image-side-text">
-              <img src="res/ARC-1.jpg" class="image" style="width: 45ch; height: auto;"
-                   alt="Intel Arc graphics have finally hit the market">
-              <p>
-                &emsp;Well after months of waiting, Intel's Arc GPUs have finally hit the market in China.
-                At a planned MSRP of $130 to $140 USD in the US, the Arc A380 has been widely controversial, primarily
-                due to news sites such as wccftech misreporting the price, confusing the price of the prebuilt computers
-                the GPU comes in with the price of the GPU itself. Fortunately, most other sites caught this mistake,
-                and sites such as PCGamer have properly reported the price of the Chinese cards at $150 USD.
-              </p>
-            </div>
-            <p>
-              &emsp;Of course, these GPUs are young, and as a result, their drivers need a lot of work. As of now,
-              games which use DirectX 11 suffer worse performance than the AMD RX6400.
-            </p>
-          </div>
+      <div id="articles">
+        <div id="article-pages">
+          <div id="article-home"></div>
+          <div id="intel-arc-article"></div>
         </div>
 
         <div>
@@ -77,21 +49,25 @@
                       class="article-button" value="article-home">Home</button>
             </li>
             <li>
-              <button onclick="handleArticleClick('intel-arc', this)"
-                      class="article-button" value="intel-arc">Intel Arc GPUs</button>
+              <button onclick="handleArticleClick('intel-arc-article', this)"
+                      class="article-button" value="intel-arc-article">Intel Arc GPUs</button>
             </li>
           </ul>
         </div>
       </div>
-      <div id="about">
-        <h1 class="no-selection">About this site</h1>
-        <p>
-          This is a small website i've made just so that I have a place to put stuff i'm working on / stuff im
-          interested in.
-        </p>
-      </div>
+      <div id="about"></div>
     </article>
   </div>
+
+  <script src="scripts/load-blob.js"></script>
+
+  <script>
+    loadBlob('pages/homepage.html', 'home');
+    loadBlob('pages/aboutpage.html', 'about');
+
+    loadBlob('pages/articles/articleHome.html', 'article-home');
+    loadBlob('pages/articles/articleArc1.html', 'intel-arc-article');
+  </script>
 
   <script src="scripts/handle-pages.js"></script>
 
